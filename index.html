@@ -1016,7 +1016,237 @@
       transition: all .15s;
     }
     .week-add-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+    /* ── 看板视图 ── */
+    .board-shell { padding: 20px 20px 18px; }
+    .board-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 18px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .board-hero-copy { min-width: 0; }
+    .board-kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .board-title {
+      margin: 0;
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+    }
+    .board-subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+      max-width: 720px;
+    }
+    .board-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+    .board-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .board-stat {
+      background: linear-gradient(180deg, var(--surface), var(--card));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      box-shadow: var(--shadow-xs);
+      min-width: 0;
+    }
+    .board-stat .bs-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 8px;
+    }
+    .board-stat .bs-value {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.03em;
+      color: var(--text);
+    }
+    .board-stat .bs-sub {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .board-columns {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scroll-snap-type: x proximity;
+    }
+    .board-lane {
+      display: flex;
+      flex-direction: column;
+      min-height: 560px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,.78), var(--card));
+      box-shadow: var(--shadow-xs);
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+    .board-lane.overdue { border-color: rgba(212,76,71,.35); }
+    .board-lane.today { border-color: rgba(43,103,85,.35); }
+    .board-lane-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 14px 14px 12px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(248,247,242,.9));
+    }
+    .board-lane-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 0;
+    }
+    .board-lane-title strong {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+    .board-lane-title span {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .board-lane-meta {
+      text-align: right;
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .board-lane-count {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -.02em;
+    }
+    .board-lane-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 12px;
+      min-height: 240px;
+    }
+    .board-lane.drag-over {
+      background: linear-gradient(180deg, #f6fbf7 0%, #ffffff 100%);
+      box-shadow: inset 0 0 0 2px rgba(43,103,85,.16), var(--shadow-xs);
+    }
+    .board-card {
+      list-style: none;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 14px;
+      padding: 12px 12px 11px;
+      box-shadow: var(--shadow-xs);
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
+    }
+    .board-card:hover { transform: translateY(-1px); box-shadow: var(--shadow); border-color: var(--border-strong); }
+    .board-card.dragging { opacity: .35; }
+    .board-card.completed { opacity: .68; }
+    .board-card.overdue { border-left-color: var(--urgent); }
+    .board-card.today { border-left-color: var(--accent); }
+    .board-card.future { border-left-color: #3f7cff; }
+    .board-card .bc-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .board-card .bc-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.45;
+      letter-spacing: -.01em;
+      min-width: 0;
+      word-break: break-word;
+    }
+    .board-card .bc-date {
+      font-size: 11px;
+      color: var(--muted);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .board-card .bc-meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .board-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 11px;
+      color: var(--text-2);
+    }
+    .board-chip.urgent { background: var(--urgent-soft); color: #9b1c1c; border-color: rgba(212,76,71,.28); }
+    .board-chip.done { background: var(--accent-soft); color: var(--accent); border-color: rgba(43,103,85,.18); }
+    .board-chip.overdue { background: rgba(212,76,71,.1); color: var(--urgent); border-color: rgba(212,76,71,.18); }
+    .board-card-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .board-card-actions .btn {
+      padding: 4px 8px;
+      font-size: 11px;
+      border-radius: 999px;
+      height: auto;
+    }
+    .board-empty {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,.4);
+      min-height: 160px;
+    }
     [data-theme="dark"] .week-col-meta { color: var(--muted); }
+    [data-theme="dark"] .board-lane { background: linear-gradient(180deg, rgba(34,35,40,.92), rgba(28,29,33,.92)); }
+    [data-theme="dark"] .board-lane-head { background: linear-gradient(180deg, rgba(40,41,46,.95), rgba(33,34,39,.95)); }
+    [data-theme="dark"] .board-stat { background: linear-gradient(180deg, #2b2c31, #26272b); }
+    [data-theme="dark"] .board-empty { background: rgba(255,255,255,.03); }
 
     /* ── 响应式 ── */
     @media (max-width: 1080px) {
@@ -1031,6 +1261,11 @@
       .top-actions { width: 100%; flex-wrap: wrap; }
       .nav { width: 100%; flex-wrap: wrap; }
       .nav button { flex: 1 1 calc(50% - 4px); justify-content: center; }
+      .board-hero { flex-direction: column; align-items: flex-start; }
+      .board-actions { width: 100%; justify-content: flex-start; }
+      .board-summary { grid-template-columns: 1fr 1fr; }
+      .board-columns { grid-template-columns: 1fr; overflow-x: visible; }
+      .board-lane { min-height: auto; }
       .month-calendar .day-cell { min-height: 96px; padding: 8px; }
       .month-calendar .day-tasks .task-chip { font-size: 11px; }
       .task-item { padding: 12px 13px; }
@@ -1104,7 +1339,13 @@
       </div>
     </div>
     <nav class="nav">
-      <button type="button" data-view="workspace" class="active">
+      <button type="button" data-view="board" class="active">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 5h6v14H5z"></path><path d="M13 5h6v9h-6z"></path><path d="M13 16h6v3h-6z"></path></svg>
+        </span>
+        <span class="nav-label">看板</span>
+      </button>
+      <button type="button" data-view="workspace">
         <span class="nav-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.8"></rect><rect x="13" y="4" width="7" height="7" rx="1.8"></rect><rect x="4" y="13" width="7" height="7" rx="1.8"></rect><rect x="13" y="13" width="7" height="7" rx="1.8"></rect></svg>
         </span>
@@ -1130,8 +1371,28 @@
       </button>
     </nav>
 
+    <!-- 看板：任务进程可视化 -->
+    <div id="view-board" class="view visible">
+      <div class="card board-shell">
+        <div class="board-hero">
+          <div class="board-hero-copy">
+            <div class="board-kicker">任务进程</div>
+            <h2 class="board-title">看板</h2>
+            <p class="board-subtitle">按时间推进查看今天、本周、以后与已过期任务，拖拽即可调整任务落点。</p>
+          </div>
+          <div class="board-actions">
+            <button type="button" class="btn outline" id="board-jump-workspace">看月历</button>
+            <button type="button" class="btn outline" id="board-jump-week">看周视图</button>
+            <button type="button" class="btn" id="board-new-task">新建任务</button>
+          </div>
+        </div>
+        <div class="board-summary" id="board-summary"></div>
+        <div class="board-columns" id="board-columns"></div>
+      </div>
+    </div>
+
     <!-- 工作台：整月日历 + 右侧今日任务 -->
-    <div id="view-workspace" class="view visible">
+    <div id="view-workspace" class="view">
       <div class="card">
         <div class="toolbar">
           <label>年份</label>
@@ -1659,13 +1920,20 @@ const FileStore = (function() {
   let editingFreqId = null;
   let editingReminderId = null;
 
+  function setActiveView(viewName) {
+    document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('active', b.dataset.view === viewName));
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('visible'));
+    const panel = document.getElementById('view-' + viewName);
+    if (panel) panel.classList.add('visible');
+  }
+
   // --- 视图切换
   document.querySelectorAll('.nav button').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.view').forEach(v => v.classList.remove('visible'));
-      document.getElementById('view-' + btn.dataset.view).classList.add('visible');
+      setActiveView(btn.dataset.view);
+      if (btn.dataset.view === 'board') renderBoardView();
+      if (btn.dataset.view === 'workspace') renderTaskList();
+      if (btn.dataset.view === 'weekview') renderWeekView();
       if (btn.dataset.view === 'frequent') renderFrequentList();
       if (btn.dataset.view === 'review') renderReview();
     });
@@ -1703,6 +1971,34 @@ const FileStore = (function() {
       if (selY) selY.value = String(currentYear);
       if (selM) selM.value = String(currentMonth);
       renderTaskList();
+    });
+  }
+
+  const boardJumpWorkspace = document.getElementById('board-jump-workspace');
+  if (boardJumpWorkspace) {
+    boardJumpWorkspace.addEventListener('click', () => {
+      const now = new Date();
+      focusWorkspaceDate(now);
+      fillYearMonth();
+      setActiveView('workspace');
+      renderTaskList();
+    });
+  }
+
+  const boardJumpWeek = document.getElementById('board-jump-week');
+  if (boardJumpWeek) {
+    boardJumpWeek.addEventListener('click', () => {
+      weekOffset = 0;
+      setActiveView('weekview');
+      renderWeekView();
+    });
+  }
+
+  const boardNewTask = document.getElementById('board-new-task');
+  if (boardNewTask) {
+    boardNewTask.addEventListener('click', () => {
+      const now = new Date();
+      openTaskEdit({ id: null, title: '', year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate(), priority: 'normal_green' });
     });
   }
 
@@ -1770,7 +2066,7 @@ const FileStore = (function() {
     if (!t) return;
     t.completed = !t.completed;
     setTasks(tasks);
-    renderTaskList();
+    refreshAllViews();
   }
 
   function isFilterActive() {
@@ -1880,7 +2176,7 @@ const FileStore = (function() {
       if (t.year === currentYear && t.month === currentMonth && t.day === targetDay) return;
       t.year = currentYear; t.month = currentMonth; t.day = targetDay;
       setTasks(tasks);
-      renderTaskList();
+      refreshAllViews();
     });
   }
 
@@ -2021,6 +2317,9 @@ const FileStore = (function() {
     }
 
     renderTodaySidebar();
+    const activeView = document.querySelector('.nav button.active');
+    if (activeView?.dataset.view === 'board') renderBoardView();
+    if (activeView?.dataset.view === 'weekview') renderWeekView();
   }
 
   function renderTodaySidebar() {
@@ -2165,7 +2464,7 @@ const FileStore = (function() {
   function toggleArchive(task) {
     const tasks = getTasks();
     const t = tasks.find(x => x.id === task.id);
-    if (t) { t.completed = !t.completed; setTasks(tasks); renderTaskList(); }
+    if (t) { t.completed = !t.completed; setTasks(tasks); refreshAllViews(); }
     document.getElementById('overlay-task').classList.remove('visible');
   }
 
@@ -2330,6 +2629,310 @@ const FileStore = (function() {
     wrap.innerHTML = html;
   }
 
+  const BOARD_DAY_MS = 24 * 3600 * 1000;
+
+  function addDays(date, days) {
+    const d = new Date(date);
+    d.setDate(d.getDate() + days);
+    return d;
+  }
+
+  function startOfDay(date) {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function getTaskDate(task) {
+    if (!task || task.day == null || !task.year || !task.month) return null;
+    return new Date(task.year, task.month - 1, task.day);
+  }
+
+  function sameDate(a, b) {
+    return !!a && !!b &&
+      a.getFullYear() === b.getFullYear() &&
+      a.getMonth() === b.getMonth() &&
+      a.getDate() === b.getDate();
+  }
+
+  function getBoardWindow() {
+    const today = startOfDay(new Date());
+    return { today, futureEnd: addDays(today, 6) };
+  }
+
+  function boardLaneForTask(task, window) {
+    const date = getTaskDate(task);
+    if (!date) return 'later';
+    if (date < window.today) return 'overdue';
+    if (sameDate(date, window.today)) return 'today';
+    if (date <= window.futureEnd) return 'week';
+    return 'later';
+  }
+
+  function boardDateLabel(task) {
+    if (!task || task.day == null) return '整月';
+    return `${task.month}月${task.day}日`;
+  }
+
+  function boardTargetDateForLane(lane, window) {
+    switch (lane) {
+      case 'today':
+        return window.today;
+      case 'week':
+        return addDays(window.today, 1);
+      case 'later':
+        return null;
+      case 'overdue':
+        return addDays(window.today, -1);
+      default:
+        return window.today;
+    }
+  }
+
+  function focusWorkspaceDate(date) {
+    const target = startOfDay(date || new Date());
+    currentYear = target.getFullYear();
+    currentMonth = target.getMonth() + 1;
+    const selY = document.getElementById('sel-year');
+    const selM = document.getElementById('sel-month');
+    if (selY) selY.value = String(currentYear);
+    if (selM) selM.value = String(currentMonth);
+  }
+
+  function openWorkspaceForTask(task) {
+    const date = getTaskDate(task) || (task && task.year && task.month ? new Date(task.year, task.month - 1, 1) : new Date());
+    focusWorkspaceDate(date);
+    setActiveView('workspace');
+    fillYearMonth();
+    renderTaskList();
+  }
+
+  function openWeekForTask(task) {
+    const date = getTaskDate(task) || new Date();
+    const baseStart = getWeekStart(0);
+    const targetStart = startOfDay(date);
+    targetStart.setDate(targetStart.getDate() - targetStart.getDay());
+    weekOffset = Math.round((targetStart.getTime() - baseStart.getTime()) / BOARD_DAY_MS);
+    setActiveView('weekview');
+    renderWeekView();
+  }
+
+  function moveTaskToBoardLane(taskId, lane) {
+    const tasks = getTasks();
+    const t = tasks.find(x => x.id === taskId);
+    if (!t) return;
+    const window = getBoardWindow();
+    const targetDate = boardTargetDateForLane(lane, window);
+    if (lane === 'later') {
+      t.year = window.today.getFullYear();
+      t.month = window.today.getMonth() + 1;
+      t.day = null;
+    } else if (targetDate) {
+      t.year = targetDate.getFullYear();
+      t.month = targetDate.getMonth() + 1;
+      t.day = targetDate.getDate();
+    }
+    setTasks(tasks, { label: '移动任务到看板列' });
+    refreshAllViews();
+  }
+
+  function sortBoardTasks(tasks, lane, window) {
+    return tasks.slice().sort((a, b) => {
+      const ad = getTaskDate(a);
+      const bd = getTaskDate(b);
+      const aNoDate = ad == null;
+      const bNoDate = bd == null;
+      if (lane === 'later' && aNoDate !== bNoDate) return aNoDate ? -1 : 1;
+      if (lane !== 'later' && aNoDate !== bNoDate) return aNoDate ? 1 : -1;
+      const aTime = ad ? ad.getTime() : Number.POSITIVE_INFINITY;
+      const bTime = bd ? bd.getTime() : Number.POSITIVE_INFINITY;
+      if (aTime !== bTime) return aTime - bTime;
+      const aUrgent = (a.priority || 'normal_green') === 'urgent' ? 0 : 1;
+      const bUrgent = (b.priority || 'normal_green') === 'urgent' ? 0 : 1;
+      if (aUrgent !== bUrgent) return aUrgent - bUrgent;
+      if (a.completed !== b.completed) return a.completed ? 1 : -1;
+      return (a.title || '').localeCompare(b.title || '', 'zh-CN');
+    });
+  }
+
+  function renderBoardView() {
+    const summary = document.getElementById('board-summary');
+    const columns = document.getElementById('board-columns');
+    if (!summary || !columns) return;
+
+    const window = getBoardWindow();
+    const tasks = getTasks();
+    const lanes = {
+      today: [],
+      week: [],
+      later: [],
+      overdue: []
+    };
+
+    tasks.forEach(task => {
+      lanes[boardLaneForTask(task, window)].push(task);
+    });
+
+    const laneDefs = [
+      {
+        key: 'today',
+        title: '今天',
+        subtitle: `截止 ${window.today.getMonth() + 1}月${window.today.getDate()}日`,
+        action: '看周视图'
+      },
+      {
+        key: 'week',
+        title: '本周',
+        subtitle: '未来 7 天内的任务',
+        action: '看周视图'
+      },
+      {
+        key: 'later',
+        title: '以后',
+        subtitle: '未排期 / 更远任务',
+        action: '看月历'
+      },
+      {
+        key: 'overdue',
+        title: '已过期',
+        subtitle: '需要优先补漏',
+        action: '看月历'
+      }
+    ];
+
+    const total = tasks.length;
+    const done = tasks.filter(t => t.completed).length;
+    const urgent = tasks.filter(t => (t.priority || 'normal_green') === 'urgent' && !t.completed).length;
+    const overdueUnfinished = lanes.overdue.filter(t => !t.completed).length;
+
+    summary.innerHTML = `
+      <div class="board-stat">
+        <div class="bs-label">总任务</div>
+        <div class="bs-value">${total}</div>
+        <div class="bs-sub">当前全部任务</div>
+      </div>
+      <div class="board-stat">
+        <div class="bs-label">已完成</div>
+        <div class="bs-value">${done}</div>
+        <div class="bs-sub">完成率 ${total ? Math.round(done * 100 / total) : 0}%</div>
+      </div>
+      <div class="board-stat">
+        <div class="bs-label">加急未完</div>
+        <div class="bs-value">${urgent}</div>
+        <div class="bs-sub">需要优先处理</div>
+      </div>
+      <div class="board-stat">
+        <div class="bs-label">过期未完</div>
+        <div class="bs-value">${overdueUnfinished}</div>
+        <div class="bs-sub">当前存在的拖延项</div>
+      </div>
+    `;
+
+    columns.innerHTML = '';
+    laneDefs.forEach(def => {
+      const laneTasks = sortBoardTasks(lanes[def.key], def.key, window);
+      const laneDone = laneTasks.filter(t => t.completed).length;
+      const laneOverdue = laneTasks.filter(t => !t.completed && getTaskDate(t) && getTaskDate(t) < window.today).length;
+      const lane = document.createElement('section');
+      lane.className = 'board-lane ' + def.key;
+      lane.innerHTML = `
+        <div class="board-lane-head">
+          <div class="board-lane-title">
+            <strong>${def.title}</strong>
+            <span>${def.subtitle}</span>
+          </div>
+          <div class="board-lane-meta">
+            <div class="board-lane-count">${laneTasks.length} 项</div>
+            <div>已完成 ${laneDone} · 逾期 ${laneOverdue}</div>
+            <button type="button" class="btn outline" data-board-open="${def.key}">${def.action}</button>
+          </div>
+        </div>
+        <div class="board-lane-body" data-drop-zone="${def.key}"></div>
+      `;
+      const body = lane.querySelector('.board-lane-body');
+      if (laneTasks.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'board-empty';
+        empty.innerHTML = def.key === 'later'
+          ? '这里放未排期或更远的任务。<br>可拖入任务，或点「新建任务」直接创建。'
+          : '这里暂时没有任务。';
+        body.appendChild(empty);
+      } else {
+        laneTasks.forEach(task => {
+          const card = document.createElement('article');
+          const date = getTaskDate(task);
+          const overdue = date && date < window.today && !task.completed;
+          const laneClass = boardLaneForTask(task, window);
+          card.className = 'board-card ' + laneClass + (task.completed ? ' completed' : '');
+          card.draggable = true;
+          const recIcon = isRecurring(task) ? '<span class="board-chip">🔁 重复</span>' : '';
+          const dueLabel = task.day == null ? '整月' : boardDateLabel(task);
+          const priorityLabel = (task.priority || 'normal_green') === 'urgent' ? '加急' : '一般';
+          card.innerHTML = `
+            <div class="bc-top">
+              <div class="bc-title">${escapeHtml(task.title || '未命名任务')}</div>
+              <button type="button" class="bc-date">${escapeHtml(dueLabel)}</button>
+            </div>
+            <div class="bc-meta">
+              <span class="board-chip ${task.priority === 'urgent' ? 'urgent' : ''}">${priorityLabel}</span>
+              ${task.completed ? '<span class="board-chip done">已完成</span>' : ''}
+              ${overdue ? '<span class="board-chip overdue">过期</span>' : ''}
+              ${recIcon}
+            </div>
+            <div class="board-card-actions">
+              <button type="button" class="btn outline" data-move="today">今天</button>
+              <button type="button" class="btn outline" data-move="week">本周</button>
+              <button type="button" class="btn outline" data-move="later">以后</button>
+              <button type="button" class="btn outline" data-move="overdue">过期</button>
+            </div>
+          `;
+          card.addEventListener('click', () => openTaskDetail(task));
+          card.addEventListener('dragstart', e => {
+            e.dataTransfer.setData('text/plain', task.id);
+            e.dataTransfer.effectAllowed = 'move';
+            card.classList.add('dragging');
+          });
+          card.addEventListener('dragend', () => card.classList.remove('dragging'));
+          card.querySelector('.bc-date').addEventListener('click', (e) => {
+            e.stopPropagation();
+            openWorkspaceForTask(task);
+          });
+          card.querySelectorAll('[data-move]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              moveTaskToBoardLane(task.id, btn.dataset.move);
+            });
+          });
+          body.appendChild(card);
+        });
+      }
+      body.addEventListener('dragover', e => {
+        if (e.dataTransfer.types.includes('text/plain')) {
+          e.preventDefault();
+          lane.classList.add('drag-over');
+        }
+      });
+      body.addEventListener('dragleave', () => lane.classList.remove('drag-over'));
+      body.addEventListener('drop', e => {
+        e.preventDefault();
+        lane.classList.remove('drag-over');
+        const id = e.dataTransfer.getData('text/plain');
+        if (!id) return;
+        moveTaskToBoardLane(id, def.key);
+      });
+      lane.querySelector('[data-board-open]').addEventListener('click', () => {
+        if (laneTasks.length === 0) return;
+        const first = laneTasks.find(t => getTaskDate(t)) || laneTasks[0];
+        if (def.key === 'today' || def.key === 'week') {
+          openWeekForTask(first);
+        } else {
+          openWorkspaceForTask(first);
+        }
+      });
+      columns.appendChild(lane);
+    });
+  }
+
   // === 月底结转横幅 ===
   function maybeShowRollover() {
     const meta = getMeta();
@@ -2444,7 +3047,7 @@ const FileStore = (function() {
     }
   });
 
-  renderTaskList();
+  renderBoardView();
   maybeShowRollover();
 
   // ===== 暗色模式 =====
@@ -2748,7 +3351,7 @@ const FileStore = (function() {
       setTasks(tasks);
 
       document.getElementById('overlay-task').classList.remove('visible');
-      renderTaskList();
+      refreshAllViews();
     };
     panel.querySelector('#btn-archive-task').onclick = () => {
       if (!editingTaskId) return;
@@ -2758,14 +3361,14 @@ const FileStore = (function() {
       t.completed = !t.completed;
       setTasks(tasks);
       document.getElementById('overlay-task').classList.remove('visible');
-      renderTaskList();
+      refreshAllViews();
     };
     panel.querySelector('#btn-delete-task').onclick = () => {
       if (!editingTaskId) return;
       if (!confirm('确定删除该任务？')) return;
       setTasks(getTasks().filter(t => t.id !== editingTaskId), { label: '删除任务' });
       document.getElementById('overlay-task').classList.remove('visible');
-      renderTaskList();
+      refreshAllViews();
       showToast('已删除（Ctrl+Z 撤销）');
     };
     document.getElementById('overlay-task').classList.add('visible');
@@ -3102,11 +3705,12 @@ const FileStore = (function() {
   // --- 导入 / 导出 / 清空 功能 ---
   function refreshAllViews() {
     renderTaskList();
-    // 如果当前在高频任务视图，也刷新一次
     const activeView = document.querySelector('.nav button.active');
-    if (activeView && activeView.dataset.view === 'frequent') {
+    if (!activeView) return;
+    if (activeView.dataset.view === 'frequent') {
       renderFrequentList();
     }
+    if (activeView.dataset.view === 'review') renderReview();
   }
 
   function exportData() {
