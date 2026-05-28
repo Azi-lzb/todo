@@ -1,0 +1,1826 @@
+{
+  "version": 2,
+  "exportedAt": "2026-05-07T09:29:55.701Z",
+  "tasks": [
+    {
+      "id": "mmcr181rlmyw9jyea6",
+      "title": "acs会计A1402",
+      "year": 2026,
+      "month": 3,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqysp3e903hhrfeuf"
+    },
+    {
+      "id": "mmcr181raygt6n72swv",
+      "title": "国库A1402",
+      "year": 2026,
+      "month": 3,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqz447gozpch1hkur"
+    },
+    {
+      "id": "mmcr181r7x24j4no15l",
+      "title": "一批签字",
+      "year": 2026,
+      "month": 3,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqznuvw8i6ibenrpb"
+    },
+    {
+      "id": "mmcr1thcf2nc3pw73p",
+      "title": "月报二批",
+      "year": 2026,
+      "month": 3,
+      "day": 5,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqy67bct4cb9od5de"
+    },
+    {
+      "id": "mmcr1thc4geuxdwe4vl",
+      "title": "二批签字",
+      "year": 2026,
+      "month": 3,
+      "day": 5,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqzujjuumlhv6ehc"
+    },
+    {
+      "id": "mmcr9kpkqdi86llvwl",
+      "title": "下载一批报表",
+      "year": 2026,
+      "month": 3,
+      "day": 5,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcr9e1yso4kx5yf62"
+    },
+    {
+      "id": "mmcrrkodvi7svdymfyn",
+      "title": "月报一批",
+      "year": 2026,
+      "month": 3,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "每个月2-3号报送。",
+      "precautions": "买入返售、卖出回购、特定目的载体指标易错，注意查看这些指标的说明。",
+      "steps": [
+        {
+          "title": "获取数据",
+          "content": "从邮箱获取7家法人机构数据BI文件"
+        },
+        {
+          "title": "归档并上传",
+          "content": "保存到本地，【上传IJ文件】，逐个上传。去【数据采集】-【采集任务查看】，检查7家机构是否正常进入主库。主要问题有：1.报文多报少报 2.数据校验未通过 3.报文名称不对。"
+        },
+        {
+          "title": "处理数据",
+          "content": "去【业务处理】-【汇总处理】，选择【中小法人汇总】，选好【汇总日期】【频度】，开始【汇总】。汇总结束后，【综合查询】-【数据源查询】-【指标查询】-【打开查询条件】，名称搜索\"中小法人汇总\" 【查询】【打开】，调整【日期】【频度】【批次】等指标，开始搜索，导出本期 和 上期数据，用大集中工具处理。"
+        }
+      ],
+      "fromFrequentId": "mmbtzx0b6gxxk7aigy4"
+    },
+    {
+      "id": "mmcs4b8vp0n4u9mqwe",
+      "title": "季报结转数",
+      "year": 2026,
+      "month": 3,
+      "day": 12,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcsnj194nym2rlqwrf",
+      "title": "日报",
+      "year": 2026,
+      "month": 4,
+      "day": null,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcu6k0kqb908y9mebo",
+      "title": "五篇大文章共享",
+      "year": 2026,
+      "month": 3,
+      "day": 31,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "要给覃朦共享，等金数系统数据出来后。",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcu6e240p8x9zsva94m"
+    },
+    {
+      "id": "mmcuj15ndkcld87z7tn",
+      "title": "仲恺月报与季报",
+      "year": 2026,
+      "month": 3,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcuiv4i4j0530qxl3q"
+    },
+    {
+      "id": "mmcujvdd6utyex1lx6",
+      "title": "下载二批报表",
+      "year": 2026,
+      "month": 3,
+      "day": 11,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcs38xlo2b2dz26ngk"
+    },
+    {
+      "id": "mmcv54n43u0j13bsfyk",
+      "title": "一批运行分析",
+      "year": 2026,
+      "month": 3,
+      "day": 6,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv24iw1wodu6ulbsr"
+    },
+    {
+      "id": "mmcv5eigs08gcivxrqd",
+      "title": "二批运行分析",
+      "year": 2026,
+      "month": 3,
+      "day": 12,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv3qpryh5l5uy5vrn"
+    },
+    {
+      "id": "mmcv6pwg2j6q7goijgr",
+      "title": "金融信息（一批）",
+      "year": 2026,
+      "month": 3,
+      "day": 9,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "金融运行简况",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv45cwpqcahwjrms"
+    },
+    {
+      "id": "mmcv708oj81x0uq3v9",
+      "title": "金融信息（媒体版）（二批）",
+      "year": 2026,
+      "month": 3,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv4l938ntmaxbcp6w"
+    },
+    {
+      "id": "mmcwptfpz73swe9yc0p",
+      "title": "一批报表处理、共享",
+      "year": 2026,
+      "month": 3,
+      "day": 6,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcwpo3xtwioammdri"
+    },
+    {
+      "id": "mme6rrfeyq92qtyr8x",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 3,
+      "day": 9,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mme6rrfex5woqm6d5vo",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 3,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mme6rrfeg9d3cawepoe",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 3,
+      "day": 23,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mme6rrfervf6oc0d88s",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 3,
+      "day": 30,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mmikmkl4p15aghkzhgb",
+      "title": "季报结转，提前弄完把。",
+      "year": 2026,
+      "month": 3,
+      "day": 10,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "注意惠州农商行涉农季报",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmikom2mybw4cv1rci",
+      "title": "报税",
+      "year": 2026,
+      "month": 3,
+      "day": 9,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmikrrj56lxodp6i1rw",
+      "title": "民生银行",
+      "year": 2026,
+      "month": 3,
+      "day": 9,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk13i76g0sc3gjkquf",
+      "title": "2026年制度落实与统计归并关系报送",
+      "year": 2026,
+      "month": 3,
+      "day": 19,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9r70xigc2dmznxje",
+      "title": "单位贷款、个人贷款、专项一批基础数据",
+      "year": 2026,
+      "month": 4,
+      "day": 5,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9oe9ba56xedorp9"
+    },
+    {
+      "id": "mmk9re8fjrw314c09w8",
+      "title": "委托、票据、二批、单位贷款置换旧债、科技、绿色、普惠、养老、数字贷款",
+      "year": 2026,
+      "month": 3,
+      "day": 9,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9ppu7zzookinjtn"
+    },
+    {
+      "id": "mmk9rn1s1g4g6u0w3pl",
+      "title": "债券、股权、同业业务",
+      "year": 2026,
+      "month": 3,
+      "day": 11,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9pzvsk5b58jes12"
+    },
+    {
+      "id": "mmk9s45cm23k4s3etmk",
+      "title": "同业、非同业存款、存量个人存款",
+      "year": 2026,
+      "month": 3,
+      "day": 13,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9qpnbslxo1dh0g8h"
+    },
+    {
+      "id": "mmk9s98oklvofddse2",
+      "title": "代发工资",
+      "year": 2026,
+      "month": 3,
+      "day": 23,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9quqfsu1u9bqoqi"
+    },
+    {
+      "id": "mmlsesig1m0rs710xmd",
+      "title": "季报结转数要签字",
+      "year": 2026,
+      "month": 3,
+      "day": 12,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmmqik2acmey83dlt8m",
+      "title": "金融数据汇编",
+      "year": 2026,
+      "month": 3,
+      "day": 12,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmmv7pg8j4iuczsllj",
+      "title": "召开支部大会当选监票人",
+      "year": 2026,
+      "month": 3,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmmw1i5bssll3ekrsl",
+      "title": "批评与自我批评",
+      "year": 2026,
+      "month": 3,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmvphvxzx7me3liv3qi",
+      "title": "保m，蜜自查 截止上报",
+      "year": 2026,
+      "month": 3,
+      "day": 30,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "提醒应该就剩曹科的材料",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmvq11p4i2gkpcc54oe",
+      "title": "弄一个VBAWORD用于调研的工具",
+      "year": 2026,
+      "month": 3,
+      "day": 17,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mn30nm5jnmp8x5gs7tl",
+      "title": "SQL语法检测",
+      "year": 2026,
+      "month": 3,
+      "day": 24,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mn6qqi7csgqarfn0mop",
+      "title": "惠东惠民报备表",
+      "year": 2026,
+      "month": 3,
+      "day": 26,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mn87h63lmejr5bh6tx",
+      "title": "应急演练计划",
+      "year": 2026,
+      "month": 3,
+      "day": 27,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mn89559kvt1zzs05xjr",
+      "title": "应急演练报送",
+      "year": 2026,
+      "month": 6,
+      "day": 15,
+      "priority": "normal_green",
+      "completed": false,
+      "guide": "要报送自查报告和一案双册",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnchg05f9tuspg6lmou",
+      "title": "月报一批",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "每个月2-3号报送。",
+      "precautions": "买入返售、卖出回购、特定目的载体指标易错，注意查看这些指标的说明。",
+      "steps": [
+        {
+          "title": "获取数据",
+          "content": "从邮箱获取7家法人机构数据BI文件"
+        },
+        {
+          "title": "归档并上传",
+          "content": "保存到本地，【上传IJ文件】，逐个上传。去【数据采集】-【采集任务查看】，检查7家机构是否正常进入主库。主要问题有：1.报文多报少报 2.数据校验未通过 3.报文名称不对。"
+        },
+        {
+          "title": "处理数据",
+          "content": "去【业务处理】-【汇总处理】，选择【中小法人汇总】，选好【汇总日期】【频度】，开始【汇总】。汇总结束后，【综合查询】-【数据源查询】-【指标查询】-【打开查询条件】，名称搜索\"中小法人汇总\" 【查询】【打开】，调整【日期】【频度】【批次】等指标，开始搜索，导出本期 和 上期数据，用大集中工具处理。"
+        }
+      ],
+      "fromFrequentId": "mmbtzx0b6gxxk7aigy4"
+    },
+    {
+      "id": "mnchg8ewj69wp6fzxd",
+      "title": "会计A1402",
+      "year": 2026,
+      "month": 4,
+      "day": 1,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqysp3e903hhrfeuf"
+    },
+    {
+      "id": "mnchg8ew82tj4bal5pf",
+      "title": "国库A1402",
+      "year": 2026,
+      "month": 4,
+      "day": 1,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqz447gozpch1hkur"
+    },
+    {
+      "id": "mnchgetcvx45tsmbmke",
+      "title": "一批签字",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqznuvw8i6ibenrpb"
+    },
+    {
+      "id": "mnchhn2gjg36ifeemur",
+      "title": "月报二批",
+      "year": 2026,
+      "month": 4,
+      "day": 7,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqy67bct4cb9od5de"
+    },
+    {
+      "id": "mnchhn2grx7w6kbhpr",
+      "title": "二批签字",
+      "year": 2026,
+      "month": 4,
+      "day": 7,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqzujjuumlhv6ehc"
+    },
+    {
+      "id": "mnchi84wxp0af82vvo",
+      "title": "下载一批报表",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcr9e1yso4kx5yf62"
+    },
+    {
+      "id": "mnchijhkxsk5ar5v8e8",
+      "title": "下载二批报表",
+      "year": 2026,
+      "month": 4,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcs38xlo2b2dz26ngk"
+    },
+    {
+      "id": "mnchjey8zkm8pw1gkdp",
+      "title": "一批运行分析",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv24iw1wodu6ulbsr"
+    },
+    {
+      "id": "mnchjm3ky44im1sof8",
+      "title": "二批运行分析",
+      "year": 2026,
+      "month": 4,
+      "day": 14,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv3qpryh5l5uy5vrn"
+    },
+    {
+      "id": "mnchjvqpai8q9rbgde9",
+      "title": "金融信息（一批）",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "金融运行简况",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv45cwpqcahwjrms"
+    },
+    {
+      "id": "mnchk4hkn4q6abcnff",
+      "title": "金融信息（媒体版）（二批）",
+      "year": 2026,
+      "month": 4,
+      "day": 30,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcv4l938ntmaxbcp6w"
+    },
+    {
+      "id": "mnchlsu8qnccz86vmwm",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mnchlsu8wa0jhotokgj",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 4,
+      "day": 6,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mnchlsu8zyybxtmaa5j",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 4,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mnchlsu89ytu9xonu4c",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 4,
+      "day": 20,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mnchlsu83at0zzz1l51",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 4,
+      "day": 27,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mnchmz22hkshtehccvv",
+      "title": "季报一、二批",
+      "year": 2026,
+      "month": 4,
+      "day": 14,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnchnv94h3eql6fjhmk",
+      "title": "季报签字",
+      "year": 2026,
+      "month": 4,
+      "day": 14,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mnchnn14db8i9vt60d8"
+    },
+    {
+      "id": "mnchp5eozzdpiuvp6u",
+      "title": "五篇大文章共享",
+      "year": 2026,
+      "month": 4,
+      "day": 29,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "要给覃朦共享，等金数系统数据出来后。",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmcu6e240p8x9zsva94m"
+    },
+    {
+      "id": "mnczpyrc25sm6kwn0ks",
+      "title": "内审工作",
+      "year": 2026,
+      "month": 4,
+      "day": null,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mne0zca6pgc6qmp7trp",
+      "title": "单位贷款、个人贷款、专项一批基础数据",
+      "year": 2026,
+      "month": 4,
+      "day": 7,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9oe9ba56xedorp9"
+    },
+    {
+      "id": "mne0znzmotgjzlf0nz",
+      "title": "委托、票据、二批、单位贷款置换旧债、科技、绿色、普惠、养老、数字贷款",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9ppu7zzookinjtn"
+    },
+    {
+      "id": "mne10vsym4lis711cyh",
+      "title": "债券、股权",
+      "year": 2026,
+      "month": 4,
+      "day": 13,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9pzvsk5b58jes12"
+    },
+    {
+      "id": "mne11636ta0ro2awsl",
+      "title": "同业、非同业存款、存量个人存款",
+      "year": 2026,
+      "month": 4,
+      "day": 15,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9qpnbslxo1dh0g8h"
+    },
+    {
+      "id": "mne11iuyu5819twc6do",
+      "title": "代发工资",
+      "year": 2026,
+      "month": 4,
+      "day": 22,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mmk9quqfsu1u9bqoqi"
+    },
+    {
+      "id": "mne12dgy8i361bv94jg",
+      "title": "金数互联网业务",
+      "year": 2026,
+      "month": 4,
+      "day": 15,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mne121rmwxp47a5vwnh"
+    },
+    {
+      "id": "mne12dgysg3qo2oeulg",
+      "title": "金数互联网业务",
+      "year": 2026,
+      "month": 4,
+      "day": 16,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mne121rmwxp47a5vwnh"
+    },
+    {
+      "id": "mnh88x0nduh1gph993e",
+      "title": "惠州市机构基本情况、村镇银行基本情况按季度报送",
+      "year": 2026,
+      "month": 4,
+      "day": 9,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "一个是8.1小贷、一个是1.9村镇银行的基本情况",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mnh88nt13vlenuqu7to"
+    },
+    {
+      "id": "mnh894icgawrhkv5ssf",
+      "title": "惠州市机构基本情况、村镇银行基本情况按季度报送",
+      "year": 2026,
+      "month": 7,
+      "day": 9,
+      "priority": "urgent",
+      "completed": false,
+      "guide": "一个是8.1小贷、一个是1.9村镇银行的基本情况",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mnh88nt13vlenuqu7to"
+    },
+    {
+      "id": "mnh89alz945cml2shq",
+      "title": "惠州市机构基本情况、村镇银行基本情况按季度报送",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "priority": "urgent",
+      "completed": false,
+      "guide": "一个是8.1小贷、一个是1.9村镇银行的基本情况",
+      "precautions": "",
+      "steps": [],
+      "fromFrequentId": "mnh88nt13vlenuqu7to"
+    },
+    {
+      "id": "mnpfqkvavew4r4wyuhi",
+      "title": "惠州农商行绿色贷款报备",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnppxe1015n594s13vl",
+      "title": "写一个交流的签报和发文把",
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnr3wjnn8g2buu8k3bb",
+      "title": "小微 民营三月数据共享 廖嘉星",
+      "year": 2026,
+      "month": 4,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mns8i9677bfhvcyq17k",
+      "title": "小刘的函盖章扫描",
+      "year": 2026,
+      "month": 4,
+      "day": 10,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnsb4q7upydcir25mjk",
+      "title": "季度运行分析先写个初稿把",
+      "year": 2026,
+      "month": 4,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnsncnlk8csfm6790vg",
+      "title": "把函发给惠州农商行",
+      "year": 2026,
+      "month": 4,
+      "day": 13,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnzvfsmfy4o2ezc9w8p",
+      "title": "要报送统计检查工作报告",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "priority": "urgent",
+      "completed": false,
+      "guide": "给省分行报送",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0rj7np9qickmzcuc",
+      "title": "惠州财政库函数据反馈",
+      "year": 2026,
+      "month": 4,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0rjlbop7tlz8evyzj",
+      "title": "仲恺季报",
+      "year": 2026,
+      "month": 4,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0rju0c98wuzkgzn6k",
+      "title": "绿色贷款给亚星",
+      "year": 2026,
+      "month": 4,
+      "day": 16,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0xomg5toea5ibnwh",
+      "title": "那个金数大集中地区比对",
+      "year": 2026,
+      "month": 4,
+      "day": 22,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0xp1rr42e0ovlw7fw",
+      "title": "sqlppt制作",
+      "year": 2026,
+      "month": 4,
+      "day": 24,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo0xsnyuu56wqwxgyq",
+      "title": "把财政库函给反馈了盖章",
+      "year": 2026,
+      "month": 4,
+      "day": 24,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo274esmdy8lwiynuu7",
+      "title": "关于开展金融统计检查有关事项的通知可能要转发下去",
+      "year": 2026,
+      "month": 4,
+      "day": 24,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo2oy3iiiml4sj56rxr",
+      "title": "审计的调研和清单",
+      "year": 2026,
+      "month": 4,
+      "day": 20,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo2oyjuxvznkgi8ykl",
+      "title": "金融数据汇编应该也能更新了",
+      "year": 2026,
+      "month": 4,
+      "day": 20,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo6jc0a0jij1491rijd",
+      "title": "更新分机构基本情况表数据，季度出来了",
+      "year": 2026,
+      "month": 4,
+      "day": 21,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo6lef1k2jsra8a8yjq",
+      "title": "绿色看看能不能转管理引导1",
+      "year": 2026,
+      "month": 5,
+      "day": 30,
+      "priority": "normal_green",
+      "completed": false,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo7ylclsl98d4ostwdh",
+      "title": "三会一课表格盖章提交",
+      "year": 2026,
+      "month": 4,
+      "day": 22,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo9by2tai39n2ubf9kp",
+      "title": "党费缴纳",
+      "year": 2026,
+      "month": 4,
+      "day": 27,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mo9eq0ar87vfgemgl57",
+      "title": "调研明天回收",
+      "year": 2026,
+      "month": 4,
+      "day": 23,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moaxme5uaaqwfc4gnfd",
+      "title": "年报时间提前了，注意报送签字",
+      "year": 2026,
+      "month": 4,
+      "day": 30,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moggz8km508a0u5koeo",
+      "title": "党员大会",
+      "year": 2026,
+      "month": 4,
+      "day": 28,
+      "priority": "normal_green",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moi1equ90ogczi79iv0r",
+      "title": "梳理有哪些分机构表单，可能要重新生成",
+      "year": 2026,
+      "month": 5,
+      "day": 30,
+      "priority": "normal_green",
+      "completed": false,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moi1xvxetx4pcz1fh1i",
+      "title": "月报一批",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "每个月2-3号报送。",
+      "precautions": "买入返售、卖出回购、特定目的载体指标易错，注意查看这些指标的说明。",
+      "steps": [
+        {
+          "title": "获取数据",
+          "content": "从邮箱获取7家法人机构数据BI文件"
+        },
+        {
+          "title": "归档并上传",
+          "content": "保存到本地，【上传IJ文件】，逐个上传。去【数据采集】-【采集任务查看】，检查7家机构是否正常进入主库。主要问题有：1.报文多报少报 2.数据校验未通过 3.报文名称不对。"
+        },
+        {
+          "title": "处理数据",
+          "content": "去【业务处理】-【汇总处理】，选择【中小法人汇总】，选好【汇总日期】【频度】，开始【汇总】。汇总结束后，【综合查询】-【数据源查询】-【指标查询】-【打开查询条件】，名称搜索\"中小法人汇总\" 【查询】【打开】，调整【日期】【频度】【批次】等指标，开始搜索，导出本期 和 上期数据，用大集中工具处理。"
+        }
+      ],
+      "fromFrequentId": "mmbtzx0b6gxxk7aigy4"
+    },
+    {
+      "id": "moi1y4a84kzl8bszg5v",
+      "title": "月报二批",
+      "year": 2026,
+      "month": 5,
+      "day": 6,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqy67bct4cb9od5de"
+    },
+    {
+      "id": "moi1yklkygr4bakyr4",
+      "title": "会计A1402",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqysp3e903hhrfeuf"
+    },
+    {
+      "id": "moi1yqswidep2a4apgn",
+      "title": "国库A1402",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqz447gozpch1hkur"
+    },
+    {
+      "id": "moi1yvfru7q17osph",
+      "title": "一批签字",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqznuvw8i6ibenrpb"
+    },
+    {
+      "id": "moi1yy5maddh63f411",
+      "title": "二批签字",
+      "year": 2026,
+      "month": 5,
+      "day": 6,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ],
+      "fromFrequentId": "mmcqzujjuumlhv6ehc"
+    },
+    {
+      "id": "moi20cdbtkvnotz689c",
+      "title": "年报也提前了注意签字",
+      "year": 2026,
+      "month": 5,
+      "day": 7,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moi36qhir03k45h0y7p",
+      "title": "注意做日月报核对",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "moi96suj0kdpl0oa82re",
+      "title": "有一张金数的利率时序可以更新一下模板，构思一下",
+      "year": 2026,
+      "month": 5,
+      "day": 23,
+      "priority": "normal_green",
+      "completed": false,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mojbq2jn8xkw7hh3709",
+      "title": "注意会计费用要补录",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mojz2encda3l4guaj6g",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 5,
+      "day": 7,
+      "priority": "normal_green",
+      "completed": true,
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mojz2ency28l67g2af",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 5,
+      "day": 11,
+      "priority": "normal_green",
+      "completed": false,
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mojz2enc9w1wcb1h8v",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 5,
+      "day": 18,
+      "priority": "normal_green",
+      "completed": false,
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mojz2encxsghawkodpm",
+      "title": "市府办周频统计数据",
+      "year": 2026,
+      "month": 5,
+      "day": 25,
+      "priority": "normal_green",
+      "completed": false,
+      "fromFrequentId": "mme6rm8h4oicizqc7v7"
+    },
+    {
+      "id": "mor0omcdhsb9nir0a7h",
+      "title": "日报签字",
+      "year": 2026,
+      "month": 5,
+      "day": 4,
+      "priority": "urgent",
+      "completed": true,
+      "fromFrequentId": "mor0oc715hh1rn7levd"
+    },
+    {
+      "id": "motdr3mje2i3hl2zvwb",
+      "title": "汇编的绿色 所有对外的绿色都要修改为金数口径",
+      "year": 2026,
+      "month": 5,
+      "day": 7,
+      "priority": "normal_green",
+      "completed": true
+    },
+    {
+      "id": "motey4lnk32j82tas98",
+      "title": "审计业务数据统计",
+      "year": 2026,
+      "month": 5,
+      "day": 6,
+      "priority": "normal_green",
+      "completed": true
+    },
+    {
+      "id": "mott99d4kmjdhdgg6gq",
+      "title": "设计一个异动的表，停用运行分析",
+      "year": 2026,
+      "month": 5,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": false
+    },
+    {
+      "id": "motwevin19l0u01wjcj",
+      "title": "一批报表数据可以处理了",
+      "year": 2026,
+      "month": 5,
+      "day": 7,
+      "priority": "normal_green",
+      "completed": true
+    },
+    {
+      "id": "movac19fwvr1sk9ua7f",
+      "title": "一批分析",
+      "year": 2026,
+      "month": 5,
+      "day": 8,
+      "priority": "normal_green",
+      "completed": false
+    }
+  ],
+  "frequent": [
+    {
+      "id": "mmbtzx0b6gxxk7aigy4",
+      "title": "月报一批",
+      "priority": "urgent",
+      "guide": "每个月2-3号报送。",
+      "precautions": "买入返售、卖出回购、特定目的载体指标易错，注意查看这些指标的说明。",
+      "steps": [
+        {
+          "title": "获取数据",
+          "content": "从邮箱获取7家法人机构数据BI文件"
+        },
+        {
+          "title": "归档并上传",
+          "content": "保存到本地，【上传IJ文件】，逐个上传。去【数据采集】-【采集任务查看】，检查7家机构是否正常进入主库。主要问题有：1.报文多报少报 2.数据校验未通过 3.报文名称不对。"
+        },
+        {
+          "title": "处理数据",
+          "content": "去【业务处理】-【汇总处理】，选择【中小法人汇总】，选好【汇总日期】【频度】，开始【汇总】。汇总结束后，【综合查询】-【数据源查询】-【指标查询】-【打开查询条件】，名称搜索\"中小法人汇总\" 【查询】【打开】，调整【日期】【频度】【批次】等指标，开始搜索，导出本期 和 上期数据，用大集中工具处理。"
+        }
+      ]
+    },
+    {
+      "id": "mmcqy67bct4cb9od5de",
+      "title": "月报二批",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcqysp3e903hhrfeuf",
+      "title": "会计A1402",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcqz447gozpch1hkur",
+      "title": "国库A1402",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcqznuvw8i6ibenrpb",
+      "title": "一批签字",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcqzujjuumlhv6ehc",
+      "title": "二批签字",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcr9e1yso4kx5yf62",
+      "title": "下载一批报表",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcs38xlo2b2dz26ngk",
+      "title": "下载二批报表",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": [
+        {
+          "title": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": "mmcu6e240p8x9zsva94m",
+      "title": "五篇大文章共享",
+      "priority": "urgent",
+      "guide": "要给覃朦共享，等金数系统数据出来后。",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcuiv4i4j0530qxl3q",
+      "title": "仲恺月报与季报",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcv24iw1wodu6ulbsr",
+      "title": "一批运行分析",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcv3qpryh5l5uy5vrn",
+      "title": "二批运行分析",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcv45cwpqcahwjrms",
+      "title": "金融信息（一批）",
+      "priority": "normal_green",
+      "guide": "金融运行简况",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcv4l938ntmaxbcp6w",
+      "title": "金融信息（媒体版）（二批）",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmcwpo3xtwioammdri",
+      "title": "一批报表处理、共享",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mme6rm8h4oicizqc7v7",
+      "title": "市府办周频统计数据",
+      "priority": "normal_green",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9oe9ba56xedorp9",
+      "title": "单位贷款、个人贷款、专项一批基础数据",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9ppu7zzookinjtn",
+      "title": "委托、票据、二批、单位贷款置换旧债、科技、绿色、普惠、养老、数字贷款",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9pzvsk5b58jes12",
+      "title": "债券、股权",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9qpnbslxo1dh0g8h",
+      "title": "同业、非同业存款、存量个人存款",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mmk9quqfsu1u9bqoqi",
+      "title": "代发工资",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mn89559km6pbpph3hwq",
+      "title": "应急演练报送",
+      "priority": "normal_green",
+      "guide": "要报送自查报告和一案双册",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnchn92hzylr3mn7t4",
+      "title": "季报一、二批",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnchnn14db8i9vt60d8",
+      "title": "季报签字",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mne121rmwxp47a5vwnh",
+      "title": "金数互联网业务",
+      "priority": "urgent",
+      "guide": "",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mnh88nt13vlenuqu7to",
+      "title": "惠州市机构基本情况按季度报送（村镇银行已经取消报送）",
+      "priority": "urgent",
+      "guide": "一个是8.1小贷、一个是1.9村镇银行的基本情况",
+      "precautions": "",
+      "steps": []
+    },
+    {
+      "id": "mor0oc715hh1rn7levd",
+      "title": "日报签字",
+      "priority": "urgent"
+    }
+  ],
+  "reminders": [],
+  "meta": {
+    "lastRolloverMonth": "2026-05"
+  }
+}
